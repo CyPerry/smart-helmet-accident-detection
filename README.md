@@ -17,7 +17,7 @@ A helmet protects a rider during a crash, but it can't call for help afterwards.
 ## How it works
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["MPU9250 IMU<br/>in the helmet"] --> B["ESP32 runs a 1D-CNN<br/>on 200-sample windows"]
     B -->|crash detected| C["Buzzer and LEDs<br/>rider can cancel"]
     C -->|rider presses cancel| G["Alarm dismissed"]
